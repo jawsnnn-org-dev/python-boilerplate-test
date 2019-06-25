@@ -31,5 +31,5 @@ The following are required to be setup and configured on your system to initiali
     - Update requirements.txt with package dependencies (if any)
 
 - Step 3: Run initialization script
-      cd my-project-directory/meta
-      init.bat
+    cd my-project-directory/meta
+    init.bat
