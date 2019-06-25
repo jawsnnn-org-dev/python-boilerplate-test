@@ -24,6 +24,7 @@ The following are required to be setup and configured on your system to initiali
 
 ### Setup
 - Step 1: Clone boilerplate repository to your local machine
+
 `git clone https://github.com/EliLillyCo/lusa-python-boilerplate my-project-directory`
 
 - Step 2: Configure metadata
@@ -31,5 +32,6 @@ The following are required to be setup and configured on your system to initiali
     - Update requirements.txt with package dependencies (if any)
 
 - Step 3: Run initialization script
+
     cd my-project-directory/meta
     init.bat
