@@ -1,4 +1,5 @@
 node {
+  git "https://github.com/jawsnnn-org-dev/python-boilerplate-test.git"
   dir('env'){
     deleteDir()
   }
