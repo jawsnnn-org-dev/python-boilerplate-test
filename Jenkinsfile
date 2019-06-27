@@ -12,5 +12,6 @@ node {
     }
     stage('Test'){
       bat 'echo "hello"'
+    }
   }
 }
