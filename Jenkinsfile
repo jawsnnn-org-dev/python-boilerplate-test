@@ -2,9 +2,6 @@ node {
   dir("env"){
     deleteDir()
   }
-  bat "mkdir env &&" 
-  bat "cd env"
-  bat "virtualenv build-env"
-  bat "build-env/Scripts/activate.bat"
-  bat "pip install -r ../../../requirements.txt"
+  bat "mkdir env && cd env && virtualenv build-env" 
+  bat "env/build-env/Scripts/activate.bat && pip install -r requirements.txt"  
 }
