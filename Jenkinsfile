@@ -1,4 +1,4 @@
-cleanWs
+deleteDir()
 
 node {
   bat "mkdir env &&" 
