@@ -1,5 +1,7 @@
 node {
-  deleteDir("env")
+  dir("env"){
+    deleteDir()
+  }
   bat "mkdir env &&" 
   bat "cd env"
   bat "virtualenv build-env"
