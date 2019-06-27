@@ -1,3 +1,5 @@
+cleanWs
+
 node {
   bat "mkdir env &&" 
   bat "cd env"
