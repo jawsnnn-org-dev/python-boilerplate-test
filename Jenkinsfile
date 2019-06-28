@@ -17,11 +17,11 @@ pipeline {
     }
     stage('Test'){
       steps {        
-        bat '"env/build-env/Scripts/activate.bat" && pytest --cov ./ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
+        bat '"env/build-env/Scripts/activate.bat" && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
       }
     }
-    stage("Publish reports") {
-      steps {
+    post {
+      always {
         cobertura coberturaReportFile: '**/coverage.xml'
         junit '**/junit.xml'
       }
