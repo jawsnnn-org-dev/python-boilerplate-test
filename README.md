@@ -29,6 +29,7 @@ The following are required to be setup and configured on your system to initiali
 
 - Step 2: Configure metadata
     - Update meta/metadata.py with project details
+    
     *Important* - This should include specifying details of the empty git repository created for this project
     - Update requirements.txt with package dependencies (if any)
 

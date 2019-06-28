@@ -17,7 +17,8 @@ pipeline {
     }
     stage('Test'){
       steps {
-        bat 'echo "hello"'
+        
+        bat 'pytest --cov ./ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
       }
     }
   }
