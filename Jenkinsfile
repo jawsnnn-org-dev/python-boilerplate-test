@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Test'){
       steps {        
-        bat '"env/build-env/Scripts/activate.bat" && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
+        bat '"env/build-env/Scripts/activate.bat" && pylint $(find src -maxdepth 4 -name "*.py") --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}"> pylint.log && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
       }
     }    
   }

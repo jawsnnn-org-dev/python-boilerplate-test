@@ -20,6 +20,7 @@ The following are required to be setup and configured on your system to initiali
 * Git command line installed on your system
 * An empty Github repository initialized in Elilillyco org. If you don't know how to do this follow [these steps](https://lilly.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB2016891)
 * A local python installation (v3.5+) with pip and virtualenv pre-installed
+* Add Cobertura and Junit plugins to your Jenkins instance for coverage and test reports
 
 
 ### Setup
