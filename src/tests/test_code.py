@@ -10,4 +10,4 @@ from ..helloworld import greet
 
 def test_greet():
     """Intentionally failing test template"""
-    assert greet() == "Helloo World!"
+    assert greet() == "Hello World!"
