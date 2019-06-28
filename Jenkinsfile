@@ -19,12 +19,12 @@ pipeline {
       steps {        
         bat '"env/build-env/Scripts/activate.bat" && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
       }
-    }
-    post {
-      always {
-        cobertura coberturaReportFile: '**/coverage.xml'
-        junit '**/junit.xml'
-      }
+    }    
+  }
+  post {
+    always {
+      cobertura coberturaReportFile: '**/coverage.xml'
+      junit '**/junit.xml'
     }
   }
 }
