@@ -18,7 +18,7 @@ pipeline {
     stage('Test'){
       steps {
         
-        bat 'pytest --cov ./ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
+        bat '"env/build-env/Scripts/activate.bat" && pytest --cov ./ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
       }
     }
   }
