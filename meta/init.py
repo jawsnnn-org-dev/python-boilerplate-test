@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Setup the project environment
-- Create fresh virtual environment for project 
-- Attach project to configured Git remote
-- create dynamic initialization script for installing pre-defined dependencies
+Author: Arpan Malviya
+Purpose: 
+    Setup the project environment
+    - Create fresh virtual environment for project 
+    - Attach project to configured Git remote
+    - create dynamic initialization script for installing pre-defined dependencies
+Date: 24-JUN-2019
 """
 
 import metadata
