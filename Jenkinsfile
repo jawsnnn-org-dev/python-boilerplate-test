@@ -17,7 +17,8 @@ pipeline {
     }
     stage('Lint and Test'){
       steps {        
-        bat '"env/build-env/Scripts/activate.bat" && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml && pylint src --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" > pylint.log'
+        bat '"env/build-env/Scripts/activate.bat" && pytest --cov src/ --cov-report term-missing --cov-report xml --junitxml=junit.xml'
+        bat '"env/build-env/Scripts/activate.bat" && pylint src --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" > pylint.log || exit 0'
       }
     }    
   }
